@@ -6,7 +6,7 @@ configuration
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="vimrc zshrc"  # list of files/folders to symlink
+files="vimrc zshrc vim"  # list of files/folders to symlink
 
 
 # create dotfiles_old in homedir
@@ -22,22 +22,4 @@ for file in $files; do
 	ln -s $dir/$file ~/.$file
 done
 
-
-install_zsh () {
-if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
-	if [[ ! -d $dir/oh-my-zsh ]]; then
-		git clone http://github.com/robbyrussell/oh-my-zsh.git
-	fi
-	
-	if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
-		chsh -s $(which zsh)
-	fi
-else
-	pacman -S zsh
-	install_zsh
-fi
-}
-
-cd ~
-
-install_zsh
+mv $dir/Vundle.vim ~/.vim/bundle/Vundle.vim
