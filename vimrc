@@ -28,14 +28,15 @@ set wrap "Wrap lines
 
 map <space> /
 
-
-
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
