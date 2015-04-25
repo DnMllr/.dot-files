@@ -1,6 +1,6 @@
 export EDITOR=vim
 
-source ~/dot-files/antigen/antigen.sh
+source ~/dotfiles/antigen/antigen.sh
 
 # load the oh-my-zsh's library.
 antigen use oh-my-zsh
