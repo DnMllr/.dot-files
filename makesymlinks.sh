@@ -4,8 +4,8 @@
 # configuration
 ####
 
-dir=~/dotfiles
-olddir=~/dotfiles_old
+dir=~/.dot-files
+olddir=~/.dot-files-old
 files="vimrc zshrc vim"  # list of files/folders to symlink
 
 
@@ -17,7 +17,7 @@ mkdir -p $olddir
 # then create symlinks
 for file in $files; do
 	echo "Moving existing dotfile $file from ~ to $olddir"
-	mv ~/.$file ~/dotfiles_old/
+	mv ~/.$file $olddir
 	echo "Creating symlink to $file in home directory."
 	ln -s $dir/$file ~/.$file
 done
