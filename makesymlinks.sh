@@ -1,7 +1,7 @@
 #!/bin/bash
 ####
-This is for creating symlinks to my dotfiles
-configuration
+# This is for creating symlinks to my dotfiles
+# configuration
 ####
 
 dir=~/dotfiles
