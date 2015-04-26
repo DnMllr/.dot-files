@@ -1,15 +1,3 @@
-export EDITOR=vim
-source ~/.dot-files/antigen/antigen.zsh
-
-# load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-antigen bundle git
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-antigen theme candy
-
-antigen apply
 
 NPM_PACKAGES="/home/danielmiller/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
