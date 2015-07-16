@@ -37,6 +37,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
