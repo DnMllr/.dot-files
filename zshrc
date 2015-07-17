@@ -6,6 +6,8 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
+fpath=( "$HOME/.zfunctions" $fpath )
+
 force_color_prompt=yes
 
 setopt auto_cd
@@ -26,7 +28,8 @@ if ! zgen saved; then
 
     zgen load zsh-users/zsh-completions src
 
-    zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+    zgen load mafredri/zsh-async
+    zgen load sindresorhus/pure
 
     zgen save
 
