@@ -26,7 +26,7 @@ if ! zgen saved; then
 
     zgen load zsh-users/zsh-completions src
 
-    zgen load XsErG/zsh-themes themes/lazyuser
+    zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
     zgen save
 
