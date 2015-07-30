@@ -40,3 +40,5 @@ Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
+
+au BufRead,BufNewFile *.asm set filetype=nasm
