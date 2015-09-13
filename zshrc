@@ -10,10 +10,15 @@ fpath=( "$HOME/.zfunctions" $fpath )
 
 force_color_prompt=yes
 
+alias music_server='mpd'
+alias music_player='ncmpcpp'
+
 setopt auto_cd
 
-eval `ssh-agent -s`
-ssh-add
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+    eval `ssh-agent -s`
+    ssh-add
+fi
 
 if ! zgen saved; then
 
@@ -34,3 +39,4 @@ if ! zgen saved; then
     zgen save
 
 fi
+

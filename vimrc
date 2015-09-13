@@ -12,6 +12,7 @@ set ffs=unix,dos,mac
 set nobackup
 set nowb
 set noswapfile
+set backspace=indent,eol,start
 
 set expandtab
 set smarttab
@@ -38,11 +39,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'bendavis78/vim-polymer'
 
 call vundle#end()
 filetype plugin indent on
 
 au BufRead,BufNewFile *.asm set filetype=nasm
+au BufRead,BufNewFile *.html set filetype=html
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -53,4 +56,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_sq = 0
+
 
