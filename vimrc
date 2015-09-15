@@ -1,4 +1,5 @@
 set nocompatible
+filetype off
 syntax on
 
 colorscheme desert
@@ -40,12 +41,14 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'bendavis78/vim-polymer'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
 
 au BufRead,BufNewFile *.asm set filetype=nasm
 au BufRead,BufNewFile *.html set filetype=html
+au BufRead,BufNewFile *.rs set filetype=rust
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

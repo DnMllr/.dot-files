@@ -6,7 +6,7 @@
 
 dir=~/.dot-files
 olddir=~/.dot-files-old
-files="vimrc zshrc vim tmux.conf mpdconf"  # list of files/folders to symlink
+files="vimrc zshrc vim tmux.conf mpdconf ncmpcpp"  # list of files/folders to symlink
 
 
 # create dotfiles_old in homedir

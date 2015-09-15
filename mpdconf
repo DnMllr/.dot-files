@@ -1,3 +1,4 @@
+user "danielmiller"
 music_directory "~/Music"
 playlist_directory "~/.mpd/playlists"
 db_file "~/.mpd/database"
@@ -11,3 +12,4 @@ audio_output {
     name "My Mac Device"
     mixer_type "software"
 }
+
